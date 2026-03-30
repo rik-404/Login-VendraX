@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main class="login-container">
+        <div class="top-nav">
+            <a href="index.html" class="back-link-top">← Voltar aos perfis</a>
+        </div>
+        
+        <div class="login-card">
+            <div class="profile-info">
+                <img id="profile-image" src="" alt="">
+                <h2 id="profile-name"></h2>
+            </div>
+            
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="input-group">
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="Senha" 
+                        required
+                        aria-label="Senha"
+                    >
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    Entrar
+                </button>
+                
+                <div class="form-links">
+                    <a href="forgot.html" class="forgot-link">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <script src="login.js"></script>
+</body>
+</html>
