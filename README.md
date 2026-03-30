@@ -123,4 +123,29 @@ Modifique as variáveis em `style.css`:
 3. **Tela de Esqueci Senha**: Processo de recuperação simulado
 4. **Feedback Visual**: Animações e transições suaves
 
+## 🔮 Futuras Melhorias
+
+- [ ] Sistema de temas (claro/escuro)
+- [ ] Validação de formulários mais robusta
+- [ ] Animações avançadas com CSS animations
+- [ ] Integração com backend real
+- [ ] Sistema de notificações toast
+- [ ] Suporte a múltiplos idiomas
+
+## 📄 Licença
+
+Este projeto é open source e está disponível sob a [MIT License](LICENSE).
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+- Reportar bugs
+- Sugerir melhorias
+- Enviar pull requests
+- Compartilhar o projeto
+
+---
+
+**Desenvolvido com ❤️ durante a Imersão Front-end** 
+
 *Inspiração: Netflix Interface Design*
