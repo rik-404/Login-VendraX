@@ -15,7 +15,9 @@ function setupProfileInfo() {
     const name = getUrlParameter('name');
     
     if (image) {
-        profileImage.src = image;
+        // Remove o prefixo se existir e adiciona o caminho correto
+        const cleanImage = image.replace('/assets/', '').replace('./assets/', '');
+        profileImage.src = `./assets/${cleanImage}`;
     }
     
     if (name) {
