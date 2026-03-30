@@ -44,7 +44,6 @@ O VendraX é uma recriação moderna da interface de seleção de perfis da Netf
 ## 📁 Estrutura do Projeto
 
 ```
-imersao-front-links-aula_3/
 ├── index.html          # Tela principal de seleção de perfis
 ├── login.html          # Tela de login com perfil selecionado
 ├── forgot.html         # Tela de recuperação de senha
