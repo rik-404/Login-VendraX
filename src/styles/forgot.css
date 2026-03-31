@@ -1,0 +1,110 @@
+.forgot-card {
+    max-width: 450px;
+    padding: 2.5rem 2rem;
+}
+
+.forgot-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.forgot-header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.forgot-description {
+    color: #999;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 1rem;
+    background: #333;
+    border: 1px solid #666;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    display: block;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #09e577;
+    background: #444;
+}
+
+input[type="email"]::placeholder {
+    text-align: center;
+    color: #85c7a6;
+}
+
+.forgot-btn {
+    width: 70%;
+    padding: 1rem;
+    background: #09e577;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.forgot-btn:hover {
+    background: #ffffff;
+}
+
+.success-message {
+    background: rgba(9, 229, 119, 0.1);
+    border: 1px solid #09e577;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: #09e577;
+    text-align: center;
+    display: none;
+}
+
+.error-message {
+    background: rgba(229, 9, 20, 0.1);
+    border: 1px solid #e50914;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: #e50914;
+    text-align: center;
+    display: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .forgot-card {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .forgot-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .forgot-description {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    
+    .forgot-btn {
+        width: 80%;
+    }
+}
