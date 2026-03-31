@@ -15,8 +15,20 @@ function setupProfileInfo() {
     const name = getUrlParameter('name');
     
     if (image) {
-        // Usa o caminho completo da imagem passado pela URL
-        profileImage.src = image;
+        // Ajusta o caminho da imagem para funcionar em diferentes ambientes
+        let imagePath = image;
+        
+        // Se estiver no GitHub Pages, precisa ajustar o caminho base
+        if (window.location.hostname.includes('github.io')) {
+            const pathParts = window.location.pathname.split('/');
+            const repoName = pathParts[1]; // Nome do repositório
+            imagePath = `/${repoName}/${image}`;
+        }
+        
+        profileImage.src = imagePath;
+        
+        // Debug: mostra o caminho no console
+        console.log('Image path:', imagePath);
     }
     
     if (name) {
